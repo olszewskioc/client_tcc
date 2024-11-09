@@ -4,4 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'polls/index.html')
+
+def stream(request):
+    return render(request, 'polls/stream.html')

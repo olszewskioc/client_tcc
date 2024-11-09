@@ -14,4 +14,10 @@
 ## Dependencies
 
 You need to have Python and Django installed to continue.
+Run `source/venv/Scripts/activate` in windows
+or `source/venv/bin/activate` in Linux/Mac to activate the virtual environment.
+Then, run `pip install -r requirements.txt` to install the dependencies.
+You can also install them individually with `pip install django`.
+
+To run the Django code, you need to `python manage.py migrate` then `python manage.py runserver <PORT>` 
 

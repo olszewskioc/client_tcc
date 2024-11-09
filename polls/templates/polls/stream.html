@@ -190,16 +190,16 @@
                 sensorDataList.forEach(sensorData => {
                     switch (sensorData.sensor_type) {
                         case 'HIGR':
-                            updateSensorDisplay(1, sensorData.measure_value);
+                            updateSensorDisplay(1, `${sensorData.measure_value} %`);
                             break;
                         case 'NTC':
-                            updateSensorDisplay(2, sensorData.measure_value);
+                            updateSensorDisplay(2, `${sensorData.measure_value} °C`);
                             break;
                         case 'MQ7':
-                            updateSensorDisplay(3, sensorData.measure_value);
+                            updateSensorDisplay(3, `${sensorData.measure_value} PPM`);
                             break;
                         case 'LDR':
-                            updateSensorDisplay(4, sensorData.measure_value);
+                            updateSensorDisplay(4, `${sensorData.measure_value} %`);
                             break;
                         default:
                             console.log("Sensor desconhecido:", sensorData);

@@ -57,13 +57,13 @@
         &#8592;
     </a>
     <h1>Streaming de Vídeo</h1>
-    <img id="stream" src="http://192.168.0.{{ ip }}:8090/shot.jpg" width="960" height="580" alt="Streaming de vídeo">
+    <img id="stream" src="http://192.168.0.{{ ip }}:8090/shot.jpg" width="500" height="680" alt="Streaming de vídeo">
     
     <script>
         // Função para atualizar a imagem a cada 2 segundos
         setInterval(() => {
             const img = document.getElementById('stream');
-            img.src = `http://192.168.0.105:8090/shot.jpg`;
+            img.src = `http://192.168.0.{{ ip }}:8090/shot.jpg`;
         }, 100);
     </script>
 </body>

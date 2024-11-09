@@ -21,4 +21,4 @@ def stream(request):
     return render(request, 'polls/stream.html', context)
 
 def video_stream(request):
-    return render(request, 'polls/video_stream.html', {"ip": 105})
+    return render(request, 'polls/video_stream.html', {"ip": 124})

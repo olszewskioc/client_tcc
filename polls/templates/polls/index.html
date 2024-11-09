@@ -7,27 +7,28 @@
   <style>
     /* Definindo o fundo da tela como azul suave */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #B0C4DE; /* Azul claro */
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background-color: #81A684;
+        }
 
     /* Estilizando o título */
     h1, h2 {
-      color: #2F4F4F; /* Cor escura para o título */
-      text-align: center;
-      margin-bottom: 20px;
-    }
+          color: #0E0F19;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 20px;
+        }
 
     /* Estilo para o parágrafo de introdução */
     p {
-      color: #333;
+      color: #0E0F19;
       text-align: center;
       font-size: 1.2rem;
       width: 80%;
@@ -37,8 +38,8 @@
 
     /* Estilizando o botão */
     .btn-monitoramento {
-      background-color: #1E3A8A; /* Azul escuro */
-      color: white;
+      background-color: #57886C; /* Azul escuro */
+      color: 0E0F19;
       font-size: 1.2rem;
       padding: 15px 30px;
       border: none;
@@ -50,7 +51,19 @@
     }
 
     .btn-monitoramento:hover {
-      background-color: #172e61; /* Cor um pouco mais escura ao passar o mouse */
+      background-color: #466060; /* Cor um pouco mais escura ao passar o mouse */
+    }
+
+    #buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 20vw;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+      color: #0E0F19;
     }
 
   </style>
@@ -65,7 +78,11 @@
     Utilizamos tecnologias como WebSocket para fornecer os dados em tempo real e exibi-los de forma dinâmica.
   </p>
 
-  <a href="/stream" class="btn-monitoramento">Monitoramento</a>
+  <section id="buttons">
+    <a href="/stream" class="btn-monitoramento">Sensores</a>
+    <a href="/video-stream" class="btn-monitoramento">Vídeo</a>    
+  </section>
+
 
 </body>
 </html>
